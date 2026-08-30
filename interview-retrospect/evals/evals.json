@@ -1,0 +1,50 @@
+{
+  "skill_name": "interview-retrospect",
+  "evals": [
+    {
+      "id": "complete-retro-with-reverse-qa",
+      "prompt": "以下均为虚构测试数据。使用 $interview-retrospect 复盘这场一面。日期 2026-08-20，公司：虚构公司 A，岗位：AI 产品经理。逐字稿中包含常规项目题，以及我问团队目标后面试官给出的多段回答。保存到 /tmp/example-retro.md。",
+      "expectations": [
+        "uses the nine-section Markdown report structure",
+        "summarizes normal candidate answers instead of reproducing the transcript",
+        "preserves and structures all facts, examples, conditions, judgments, and attitudes in the interviewer's reverse-QA answers",
+        "includes key interviewer quotes and job-decision implications",
+        "returns a concise chat summary and a clickable absolute report link"
+      ]
+    },
+    {
+      "id": "missing-metadata-and-output",
+      "prompt": "帮我复盘这份逐字稿：面试官问我怎么验证策略有效，我回答先上线看用户反馈。",
+      "expectations": [
+        "asks for date, company, position, round, reverse-QA status, and output destination in one message",
+        "does not ask for a JD unless job-fit analysis is requested",
+        "does not start scoring before the required metadata is resolved"
+      ]
+    },
+    {
+      "id": "neutral-follow-up-is-not-p0",
+      "prompt": "以下均为虚构测试数据。日期 2026-08-20，公司：虚构公司 A，岗位：AI 产品经理，二面。面试官听完项目结果后继续问有没有其他可迁移场景，我给出了两个有数据支持的新场景。没有反问，本次只在对话中输出。",
+      "expectations": [
+        "does not classify the follow-up as P0 merely because it was a follow-up",
+        "uses evidence to score the answer",
+        "includes the reverse-QA section and states that the user confirmed there was no reverse question"
+      ]
+    },
+    {
+      "id": "missing-reverse-qa",
+      "prompt": "日期、公司、岗位和轮次都已提供。逐字稿结束在常规问题，没有看到反问。输出到当前项目 outputs。",
+      "expectations": [
+        "asks whether there was no reverse question, it was not recorded, or the user wants to add it",
+        "does not invent interviewer answers"
+      ]
+    },
+    {
+      "id": "existing-output-file",
+      "prompt": "复盘信息完整，用户提供的目标 Markdown 文件已经存在。",
+      "expectations": [
+        "asks the user to choose overwrite, rename, or cancel saving",
+        "does not overwrite without explicit confirmation"
+      ]
+    }
+  ]
+}
