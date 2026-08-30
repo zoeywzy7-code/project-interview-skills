@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目面试叙事框架"
+  short_description: "用五段式闭环梳理项目经历，形成逻辑严密且可复述的面试叙事"
+  default_prompt: "使用 $structure-project-interview，把我的项目经历整理为 Why、现状问题、策略、验证和迭代的完整面试叙事。"
