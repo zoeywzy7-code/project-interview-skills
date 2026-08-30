@@ -1,0 +1,4 @@
+interface:
+  display_name: "面试复盘"
+  short_description: "将真实面试逐字稿整理为严格、完整、可执行的结构化复盘"
+  default_prompt: "使用 $interview-retrospect 复盘这场面试；未指定保存位置时先询问我。"
