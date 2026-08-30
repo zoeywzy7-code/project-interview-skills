@@ -1,13 +1,12 @@
 # Project Interview Skills
 
-Four Codex skills for structuring project stories, preparing interview answers, reviewing real interviews, and tracing agent errors.
+Three Codex skills for structuring project stories, preparing interview answers, and reviewing real interviews.
 
 ## Skills
 
 - [structure-project-interview](structure-project-interview/) — organize project material into a Why, problem, strategy, validation, and iteration loop.
 - [prepare-project-interview-answers](prepare-project-interview-answers/) — produce question-specific memory frameworks, spoken answers, and likely follow-ups.
 - [interview-retrospect](interview-retrospect/) — turn an interview transcript into evidence-based analysis, scoring, priorities, and a preparation plan.
-- [trace-agent-error](trace-agent-error/) — reconstruct an agent decision path, test causal factors, and propose minimal interventions.
 
 ## Installation
 
