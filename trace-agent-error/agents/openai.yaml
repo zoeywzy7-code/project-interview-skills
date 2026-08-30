@@ -1,4 +1,0 @@
-interface:
-  display_name: "Agent 错误决策追溯"
-  short_description: "追溯错误决策节点并完成可证伪的结构化归因"
-  default_prompt: "Use $trace-agent-error to analyze why the last agent response diverged from my expectation and identify the exact decision node."
