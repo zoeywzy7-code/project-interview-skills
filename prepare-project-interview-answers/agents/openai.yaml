@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目面试回答准备"
+  short_description: "根据项目资料整理记忆框架、面试主回答和高概率追问建议"
+  default_prompt: "Use $prepare-project-interview-answers to prepare a concise memory framework, interview answer, and likely follow-ups for this project question."
